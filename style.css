@@ -419,6 +419,7 @@ i.fab.fa-whatsapp {
 .footer-links,
 .footer-contact {
   flex: 1 1 250px;
+  text-decoration: none;
 }
 
 .footer-links a:hover {
@@ -577,6 +578,7 @@ i.fab.fa-whatsapp {
   .programs-card {
     width: 100%;
     height: auto;
+    padding: 20px;
   }
 
   .programs-card h3 {
@@ -658,6 +660,7 @@ i.fab.fa-whatsapp {
   .footer-links,
   .footer-contact {
     flex: 1 1 100%;
+    text-decoration: none;
   }
 
   .footer-bottom {
