@@ -367,6 +367,44 @@ i.fab.fa-whatsapp {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Küçük stil: header'da dil butonlarını düzgün göstermek için (opsiyonel) */
+.lang-switch {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.lang-btn {
+  background: transparent;
+  color: #ffd1ab;
+  border: 1px solid #ffd1ab;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.lang-btn.active {
+  color: var(--text-color);
+  background-color: #ffd1ab;
+}
+
+/* Responsive: header-container içinde dil switch sağa yaslansın küçük ekranda alt satıra geçebilir */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-and-lang {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .header-container {
   max-width: 1200px;
   display: flex;
@@ -633,6 +671,23 @@ i.fab.fa-whatsapp {
     flex-direction: column;
     gap: 10px;
   }
+  .nav-and-lang {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Dil butonları yan yana ama menünün altında */
+  .lang-switch {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Menü ortalanmış olsun */
+  .main-nav ul {
+    justify-content: center;
+  }
 
   /* Menü linklerini yan yana yapıyoruz */
   .main-nav ul {
@@ -643,7 +698,7 @@ i.fab.fa-whatsapp {
   }
 
   .main-nav a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   /* FOOTER */
