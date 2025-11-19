@@ -8,33 +8,52 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Petello</title>
+    <style>
+
+    </style>
 </head>
 
 
 <body>
     <header class="site-header">
         <div class="header-container">
-            <h1 class="logo">Petello</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#hero-section">Ana Sayfa</a></li>
-                    <li><a href="#feature-section">Özellikler</a></li>
-                    <li><a href="#video-section">Video</a></li>
-                    <li><a href="#programs-section">Programlar</a></li>
-                    <li><a href="#element-section">İletişim</a></li>
-                </ul>
-            </nav>
+
+            <!-- Sol taraf: Logo -->
+            <h1 class="logo" data-i18n="siteTitle">Petello</h1>
+
+            <!-- Sağ taraf: Menü + Dil Butonları -->
+            <div class="nav-and-lang">
+
+                <!-- Menü -->
+                <nav class="main-nav" aria-label="Ana navigasyon">
+                    <ul>
+                        <li><a href="#hero-section" data-i18n="nav.home">Ana Sayfa</a></li>
+                        <li><a href="#feature-section" data-i18n="nav.features">Hakkımızda</a></li>
+                        <li><a href="#video-section" data-i18n="nav.video">Video</a></li>
+                        <li><a href="#programs-section" data-i18n="nav.programs">Ürünlerimiz</a></li>
+                        <li><a href="#element-section" data-i18n="nav.contact">İletişim</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Dil Switch -->
+                <div class="lang-switch" aria-label="Dil seçimi">
+                    <button class="lang-btn" id="btn-tr" aria-pressed="true">TR</button>
+                    <button class="lang-btn" id="btn-en" aria-pressed="false">EN</button>
+                </div>
+
+            </div>
+
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">Petello</h1>
-            <h2 class="hero-subtitle">
-                Evcil Dostlarınızın <span class="hero-highlight">En İyi Arkadaşı</span>
-            </h2>
 
-            <p class="hero-text">
+    <section class="hero-section" id="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">Petello</h1>
+            <h2 class="hero-subtitle" data-i18n="hero.subtitle">Evcil Dostlarınızın <span class="hero-highlight"
+                    data-i18n="hero.highlight">En İyi Arkadaşı</span></h2>
+
+            <p class="hero-text" data-i18n="hero.text">
                 Evcil dostlarınızı en az sizin kadar önemsiyoruz.
                 Sağlıklı mama, eğlenceli oyuncaklar, profesyonel bakım ve çok daha fazlası.
             </p>
@@ -42,89 +61,78 @@
             <div class="hero-icons">
                 <div class="hero-icon-box">
                     <i class="fas fa-paw"></i>
-                    <span>Evcil Hayvan Bakımı</span>
+                    <span data-i18n="hero.icon1">Evcil Hayvan Bakımı</span>
                 </div>
                 <div class="hero-icon-box">
                     <i class="fas fa-bone"></i>
-                    <span>Sağlıklı Mamalar</span>
+                    <span data-i18n="hero.icon2">Sağlıklı Mamalar</span>
                 </div>
                 <div class="hero-icon-box">
                     <i class="fas fa-dog"></i>
-                    <span>Banyo & Tıraş</span>
+                    <span data-i18n="hero.icon3">Banyo & Tıraş</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="feature-section">
+    <section class="feature-section" id="feature-section">
         <div class="feature-container">
 
             <div class="feature-item">
-                <h2 class="feature-title feature-title-selected">
-                    Mutlu & Sağlıklı Dostlar
-                </h2>
-                <p class="feature-description">
+                <h2 class="feature-title feature-title-selected" data-i18n="features.item1.title">Mutlu & Sağlıklı
+                    Dostlar</h2>
+                <p class="feature-description" data-i18n="features.item1.desc">
                     Tüm dostlarımızı güvenli, konforlu ve stresten uzak ortamlarda yetiştiriyoruz.
                     Sağlıklarını, beslenmelerini ve duygusal ihtiyaçlarını en ön planda tutuyoruz.
                 </p>
             </div>
 
             <div class="feature-item">
-                <h2 class="feature-title">
-                    Premium Evcil Hayvan Ürünleri
-                </h2>
-                <p class="feature-description">
+                <h2 class="feature-title" data-i18n="features.item2.title">Premium Evcil Hayvan Ürünleri</h2>
+                <p class="feature-description" data-i18n="features.item2.desc">
                     Günlük ihtiyaçlarını ve uzun vadeli sağlıklarını destekleyen mama, aksesuar,
                     oyuncak ve bakım ürünlerinin en kaliteli çeşitlerini sunuyoruz.
                 </p>
             </div>
 
             <div class="feature-item">
-                <h2 class="feature-title">
-                    Profesyonel Bakım Hizmetleri
-                </h2>
-                <p class="feature-description">
+                <h2 class="feature-title" data-i18n="features.item3.title">Profesyonel Bakım Hizmetleri</h2>
+                <p class="feature-description" data-i18n="features.item3.desc">
                     Tıraş, banyo ve kişisel bakım hizmetlerimizle dostlarınızın her zaman
                     temiz, rahat ve mutlu olmasını sağlıyoruz. Uzman ve nazik ekip garantisiyle.
                 </p>
             </div>
-
             <div class="feature-item">
-                <h2 class="feature-title">
-                    Sahiplendirme Rehberliği
-                </h2>
-                <p class="feature-description">
+                <h2 class="feature-title" data-i18n="features.item4.title">Sahiplendirme Rehberliği</h2>
+                <p class="feature-description" data-i18n="features.item4.desc">
                     Yaşam tarzınıza en uygun dostu bulmanız için güvenli ve bilinçli sahiplendirme
                     süreçlerinde size adım adım rehberlik ediyoruz.
                 </p>
             </div>
 
             <div class="feature-item">
-                <h2 class="feature-title">
-                    Eğitim & Davranış
-                </h2>
-                <p class="feature-description">
+                <h2 class="feature-title" data-i18n="features.item5.title">Eğitim & Davranış</h2>
+                <p class="feature-description" data-i18n="features.item5.desc">
                     Temel itaatten davranış şekillendirmeye kadar uzman eğitmenlerle
                     dostlarınızın özgüvenini, disiplinini ve sizinle olan bağını güçlendiriyoruz.
                 </p>
             </div>
 
         </div>
-
         <div class="feature-image-container">
-            <img class="feature-image" src="assets/feature.jpg" alt="Özellik görseli">
+            <img class="feature-image" src="assets/feature.jpg" alt="Özellik görseli" data-i18n-alt="features.imageAlt">
         </div>
     </section>
 
-    <section class="video-section">
-        <h3 class="video-title">Nasıl Çalışıyoruz?</h3>
-        <p class="video-description">
+    <section class="video-section" id="video-section">
+        <h3 class="video-title" data-i18n="video.title">Nasıl Çalışıyoruz?</h3>
+        <p class="video-description" data-i18n="video.desc">
             Profesyonel eğitmenlerimiz bilimsel yöntemleri ve sevgi dolu yaklaşımı birleştirerek
             dostlarınızın daha mutlu ve uyumlu bir yaşam sürmesine yardımcı olur.
         </p>
 
         <div class="video-container">
-            <iframe width="50%" height="100%" src="https://www.youtube.com/embed/9Rssqdwx3Nw"
+            <iframe class="video-iframe" width="50%" height="100%" src="https://www.youtube.com/embed/9Rssqdwx3Nw"
                 title="Köpek Eğitimi Videosu" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
@@ -132,43 +140,47 @@
         </div>
     </section>
 
-    <section class="programs-section">
-        <h2 class="programs-title">
-            En Sevilen Evcil Hayvan Programları ve Ürünleri
-        </h2>
+    <section class="programs-section" id="programs-section">
+        <h2 class="programs-title" data-i18n="programs.title">En Sevilen Evcil Hayvan Programları ve Ürünleri</h2>
 
-        <p class="programs-description">
+        <p class="programs-description" data-i18n="programs.desc">
             Dostlarınızın sağlıklı, mutlu ve enerjik bir yaşam sürmesi için özel ürünler ve
             bakım programları sunuyoruz. Tüm ürünler sevgi ve güvenlik odaklı seçilmiştir.
         </p>
 
         <div class="programs-cards">
 
+            <!-- Card 1 -->
             <div class="programs-card">
                 <img src="https://images.unsplash.com/photo-1597843786411-a7fa8ad44a95?q=80&w=1170&auto=format&fit=crop"
-                    alt="Premium Köpek Maması">
-                <h3>Premium Köpek Maması</h3>
-                <p>Doğal içeriklerle hazırlanmış dengeli mama. Güçlü ve enerjik dostlar için.</p>
+                    alt="Premium Köpek Maması" data-i18n-alt="programs.card1.alt">
+                <h3 data-i18n="programs.card1.title">Premium Köpek Maması</h3>
+                <p data-i18n="programs.card1.desc">Doğal içeriklerle hazırlanmış dengeli mama. Güçlü ve enerjik dostlar
+                    için.</p>
             </div>
 
+            <!-- Card 2 -->
             <div class="programs-card">
                 <img src="https://images.unsplash.com/photo-1585837575652-267c041d77d4?q=80&w=1195&auto=format&fit=crop"
-                    alt="Kedi Oyuncakları">
-                <h3>Etkileşimli Kedi Oyuncakları</h3>
-                <p>Kedilerinizi aktif, meraklı ve zihinsel olarak canlı tutmak için tasarlanmış oyuncaklar.</p>
+                    alt="Kedi Oyuncakları" data-i18n-alt="programs.card2.alt">
+                <h3 data-i18n="programs.card2.title">Etkileşimli Kedi Oyuncakları</h3>
+                <p data-i18n="programs.card2.desc">Kedilerinizi aktif, meraklı ve zihinsel olarak canlı tutmak için
+                    tasarlanmış oyuncaklar.</p>
             </div>
 
+            <!-- Card 3 -->
             <div class="programs-card">
                 <img src="https://images.unsplash.com/photo-1611173622933-91942d394b04?q=80&w=1170&auto=format&fit=crop"
-                    alt="Bakım Kiti">
-                <h3>Evcil Hayvan Bakım Seti</h3>
-                <p>Dostlarınızı temiz, rahat ve bakımlı tutmak için eksiksiz bir bakım seti.</p>
+                    alt="Bakım Kiti" data-i18n-alt="programs.card3.alt">
+                <h3 data-i18n="programs.card3.title">Evcil Hayvan Bakım Seti</h3>
+                <p data-i18n="programs.card3.desc">Dostlarınızı temiz, rahat ve bakımlı tutmak için eksiksiz bir bakım
+                    seti.</p>
             </div>
 
         </div>
     </section>
 
-    <section class="element-section">
+    <section class="element-section" id="element-section">
         <div class="element-left">
             <iframe class="element-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.3725707332013!2d28.97835881541024!3d41.008237379300996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9c5e4a7f4b1%3A0xdf2dfcae6ea8657a!2sIstanbul!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
@@ -177,29 +189,32 @@
         </div>
 
         <div class="element-right">
-            <h2>Bize Ulaşın</h2>
-            <p class="element-subtitle">
+            <h2 data-i18n="contact.title">Bize Ulaşın</h2>
+            <p class="element-subtitle" data-i18n="contact.subtitle">
                 Sorularınız mı var? Hizmetlerimiz hakkında daha fazla bilgi mi almak istiyorsunuz?
                 Formu doldurun, ekibimiz en kısa sürede size geri dönüş yapsın.
             </p>
 
             <form class="element-form">
                 <div class="element-form-group">
-                    <label for="name">Adınız:</label>
-                    <input type="text" id="name" placeholder="Adınızı giriniz" required>
+                    <label for="name" data-i18n="form.nameLabel">Adınız:</label>
+                    <input type="text" id="name" placeholder="Adınızı giriniz"
+                        data-i18n-placeholder="form.namePlaceholder" required>
                 </div>
 
                 <div class="element-form-group">
-                    <label for="email">E-posta Adresiniz:</label>
-                    <input type="email" id="email" placeholder="E-postanızı giriniz" required>
+                    <label for="email" data-i18n="form.emailLabel">E-posta Adresiniz:</label>
+                    <input type="email" id="email" placeholder="E-postanızı giriniz"
+                        data-i18n-placeholder="form.emailPlaceholder" required>
                 </div>
 
                 <div class="element-form-group">
-                    <label for="message">Mesajınız:</label>
-                    <textarea id="message" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+                    <label for="message" data-i18n="form.messageLabel">Mesajınız:</label>
+                    <textarea id="message" rows="5" placeholder="Mesajınızı yazın..."
+                        data-i18n-placeholder="form.messagePlaceholder" required></textarea>
                 </div>
 
-                <button type="submit" class="element-buton">Mesaj Gönder</button>
+                <button type="submit" class="element-buton" data-i18n="form.submit">Mesaj Gönder</button>
             </form>
         </div>
     </section>
@@ -207,22 +222,238 @@
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-about">
-                <h3>Petello Hakkında</h3>
-                <p>Evcil dostlarınız için en iyi bakım, ürünler ve rehberliği sunuyoruz.
+                <h3 data-i18n="footer.aboutTitle">Petello Hakkında</h3>
+                <p data-i18n="footer.aboutDesc">Evcil dostlarınız için en iyi bakım, ürünler ve rehberliği sunuyoruz.
                     Mutlu dostlar, mutlu sahipler demektir!</p>
             </div>
             <div class="footer-contact">
-                <h3>İletişim</h3>
-                <p>E-posta: info@petello.com</p>
-                <p>Telefon: +1 234 567 890</p>
+                <h3 data-i18n="footer.contactTitle">İletişim</h3>
+                <p data-i18n="footer.email">E-posta: info@petello.com</p>
+                <p data-i18n="footer.phone">Telefon: +1 234 567 890</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 Petello. Tüm hakları saklıdır. Tasarım: HM.</p>
+            <p data-i18n="footer.copyright">&copy; 2025 Petello. Tüm hakları saklıdır. Tasarım: HM.</p>
         </div>
     </footer>
 
+    <script>
+        /* 
+           Basit i18n sistemi:
+           - HTML'de her çevrilebilir öğeye data-i18n="key" veya data-i18n-placeholder / data-i18n-alt ile anahtar verdik.
+           - translations objesinde 'tr' ve 'en' için tüm çeviriler tanımlı.
+           - Dil butonlarına basılınca sayfa anında güncellenir.
+        */
+
+        const translations = {
+            tr: {
+                // navigation
+                "siteTitle": "Petello",
+                "nav.home": "Ana Sayfa",
+                "nav.features": "Hakkımızda",
+                "nav.video": "Video",
+                "nav.programs": "Ürünlerimiz",
+                "nav.contact": "İletişim",
+
+                // hero
+                "hero.title": "Petello",
+                "hero.subtitle": "Evcil Dostlarınızın",
+                "hero.highlight": "En İyi Arkadaşı",
+                "hero.text": "Evcil dostlarınızı en az sizin kadar önemsiyoruz. Sağlıklı mama, eğlenceli oyuncaklar, profesyonel bakım ve çok daha fazlası.",
+                "hero.icon1": "Evcil Hayvan Bakımı",
+                "hero.icon2": "Sağlıklı Mamalar",
+                "hero.icon3": "Banyo & Tıraş",
+
+                // features
+                "features.item1.title": "Mutlu & Sağlıklı Dostlar",
+                "features.item1.desc": "Tüm dostlarımızı güvenli, konforlu ve stresten uzak ortamlarda yetiştiriyoruz. Sağlıklarını, beslenmelerini ve duygusal ihtiyaçlarını en ön planda tutuyoruz.",
+                "features.item2.title": "Premium Evcil Hayvan Ürünleri",
+                "features.item2.desc": "Günlük ihtiyaçlarını ve uzun vadeli sağlıklarını destekleyen mama, aksesuar, oyuncak ve bakım ürünlerinin en kaliteli çeşitlerini sunuyoruz.",
+                "features.item3.title": "Profesyonel Bakım Hizmetleri",
+                "features.item3.desc": "Tıraş, banyo ve kişisel bakım hizmetlerimizle dostlarınızın her zaman temiz, rahat ve mutlu olmasını sağlıyoruz. Uzman ve nazik ekip garantisiyle.",
+                "features.item4.title": "Sahiplendirme Rehberliği",
+                "features.item4.desc": "Yaşam tarzınıza en uygun dostu bulmanız için güvenli ve bilinçli sahiplendirme süreçlerinde size adım adım rehberlik ediyoruz.",
+                "features.item5.title": "Eğitim & Davranış",
+                "features.item5.desc": "Temel itaatten davranış şekillendirmeye kadar uzman eğitmenlerle dostlarınızın özgüvenini, disiplinini ve sizinle olan bağını güçlendiriyoruz.",
+                "features.imageAlt": "Özellik görseli",
+
+                // video
+                "video.title": "Nasıl Çalışıyoruz?",
+                "video.desc": "Profesyonel eğitmenlerimiz bilimsel yöntemleri ve sevgi dolu yaklaşımı birleştirerek dostlarınızın daha mutlu ve uyumlu bir yaşam sürmesine yardımcı olur.",
+                "video.iframeTitle": "Köpek Eğitimi Videosu",
+
+                // programs
+                "programs.title": "En Sevilen Evcil Hayvan Programları ve Ürünleri",
+                "programs.desc": "Dostlarınızın sağlıklı, mutlu ve enerjik bir yaşam sürmesi için özel ürünler ve bakım programları sunuyoruz. Tüm ürünler sevgi ve güvenlik odaklı seçilmiştir.",
+                "programs.card1.alt": "Premium Köpek Maması",
+                "programs.card1.title": "Premium Köpek Maması",
+                "programs.card1.desc": "Doğal içeriklerle hazırlanmış dengeli mama. Güçlü ve enerjik dostlar için.",
+                "programs.card2.alt": "Kedi Oyuncakları",
+                "programs.card2.title": "Etkileşimli Kedi Oyuncakları",
+                "programs.card2.desc": "Kedilerinizi aktif, meraklı ve zihinsel olarak canlı tutmak için tasarlanmış oyuncaklar.",
+                "programs.card3.alt": "Bakım Kiti",
+                "programs.card3.title": "Evcil Hayvan Bakım Seti",
+                "programs.card3.desc": "Dostlarınızı temiz, rahat ve bakımlı tutmak için eksiksiz bir bakım seti.",
+
+                // contact / form
+                "contact.title": "Bize Ulaşın",
+                "contact.subtitle": "Sorularınız mı var? Hizmetlerimiz hakkında daha fazla bilgi mi almak istiyorsunuz? Formu doldurun, ekibimiz en kısa sürede size geri dönüş yapsın.",
+                "form.nameLabel": "Adınız:",
+                "form.namePlaceholder": "Adınızı giriniz",
+                "form.emailLabel": "E-posta Adresiniz:",
+                "form.emailPlaceholder": "E-postanızı giriniz",
+                "form.messageLabel": "Mesajınız:",
+                "form.messagePlaceholder": "Mesajınızı yazın...",
+                "form.submit": "Mesaj Gönder",
+
+                // footer
+                "footer.aboutTitle": "Petello Hakkında",
+                "footer.aboutDesc": "Evcil dostlarınız için en iyi bakım, ürünler ve rehberliği sunuyoruz. Mutlu dostlar, mutlu sahipler demektir!",
+                "footer.contactTitle": "İletişim",
+                "footer.email": "E-posta: info@petello.com",
+                "footer.phone": "Telefon: +1 234 567 890",
+                "footer.copyright": "© 2025 Petello. Tüm hakları saklıdır. Tasarım: HM."
+            },
+
+            en: {
+                // navigation
+                "siteTitle": "Petello",
+                "nav.home": "Home",
+                "nav.features": "About Us",
+                "nav.video": "Video",
+                "nav.programs": "Products",
+                "nav.contact": "Contact",
+
+                // hero
+                "hero.title": "Petello",
+                "hero.subtitle": "Your Pet’s",
+                "hero.highlight": "Best Friend",
+                "hero.text": "We care about your pets as much as you do. Healthy food, fun toys, professional grooming and more.",
+                "hero.icon1": "Pet Care",
+                "hero.icon2": "Healthy Foods",
+                "hero.icon3": "Grooming",
+
+                // features
+                "features.item1.title": "Healthy & Happy Pets",
+                "features.item1.desc": "Every pet in our care is raised in a safe, comfortable, and stress-free environment. We prioritize their health, nutrition, and emotional well-being from day one.",
+                "features.item2.title": "Premium Pet Essentials",
+                "features.item2.desc": "Discover top-quality food, accessories, toys, and grooming products — carefully selected to support your pet’s daily needs and long-term health.",
+                "features.item3.title": "Professional Care Services",
+                "features.item3.desc": "From grooming and hygiene to personalized care, our team ensures your pets always look, feel, and live their best. Gentle hands and expert service guaranteed.",
+                "features.item4.title": "Adoption Guidance",
+                "features.item4.desc": "We help you find the perfect companion by guiding you through safe, responsible, and loving pet adoption processes tailored to your lifestyle.",
+                "features.item5.title": "Training & Behavior",
+                "features.item5.desc": "From basic obedience to behavior shaping, our expert training support helps pets build confidence, discipline, and strong bonds with their owners.",
+                "features.imageAlt": "Feature image",
+
+                // video
+                "video.title": "How We Work",
+                "video.desc": "Our professional trainers use science-based methods and a gentle, caring approach to help your pets live happier, more well-behaved lives.",
+                "video.iframeTitle": "Dog Trainer Video",
+
+                // programs
+                "programs.title": "Our Most Loved Pet Care Programs & Products",
+                "programs.desc": "We provide high-quality pet products and specialized care to help your furry friends stay healthy, happy, and full of life. All items are chosen with love and safety in mind.",
+                "programs.card1.alt": "Premium Dog Food",
+                "programs.card1.title": "Premium Dog Food",
+                "programs.card1.desc": "Healthy, balanced nutrition made with natural ingredients for strong, energetic dogs.",
+                "programs.card2.alt": "Cat Toys",
+                "programs.card2.title": "Interactive Cat Toys",
+                "programs.card2.desc": "Fun and engaging toys designed to keep your cats active, curious, and mentally stimulated.",
+                "programs.card3.alt": "Grooming Kit",
+                "programs.card3.title": "Pet Grooming Essentials",
+                "programs.card3.desc": "A complete grooming set to keep your pets clean, comfortable, and looking their best.",
+
+                // contact / form
+                "contact.title": "Contact Us",
+                "contact.subtitle": "Have a question or want to know more about our pet services? Fill out the form and our team will get back to you shortly.",
+                "form.nameLabel": "Your Name:",
+                "form.namePlaceholder": "Enter your name",
+                "form.emailLabel": "Email Address:",
+                "form.emailPlaceholder": "Enter your email",
+                "form.messageLabel": "Your Message:",
+                "form.messagePlaceholder": "Write your message...",
+                "form.submit": "Send Message",
+
+                // footer
+                "footer.aboutTitle": "About Petello",
+                "footer.aboutDesc": "We provide the best care, products, and guidance for your beloved pets. Healthy, happy pets make happy owners!",
+                "footer.contactTitle": "Contact",
+                "footer.email": "Email: info@petello.com",
+                "footer.phone": "Phone: +1 234 567 890",
+                "footer.copyright": "© 2025 Petello. All rights reserved. Designed by HM."
+            }
+        };
+
+        // yardımcı: tüm data-i18n öğelerini güncelle
+        function applyTranslations(lang) {
+            // text içerikler
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key] !== undefined) {
+                    // bazı öğeler içinde span gibi alt elementler olduğunda replace etmek gerekebilir
+                    // ama çoğu doğrudan iç metin olduğu için innerText kullanıyoruz
+                    el.innerText = translations[lang][key];
+                }
+            });
+
+            // placeholder'lar
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (translations[lang] && translations[lang][key] !== undefined) {
+                    el.setAttribute('placeholder', translations[lang][key]);
+                }
+            });
+
+            // alt (img) metinleri
+            document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+                const key = el.getAttribute('data-i18n-alt');
+                if (translations[lang] && translations[lang][key] !== undefined) {
+                    el.setAttribute('alt', translations[lang][key]);
+                }
+            });
+
+            // özel: iframe title (video)
+            const iframe = document.querySelector('.video-iframe');
+            if (iframe) {
+                const key = 'video.iframeTitle';
+                if (translations[lang] && translations[lang][key]) {
+                    iframe.setAttribute('title', translations[lang][key]);
+                }
+            }
+
+            // sayfa <html lang=""> attr güncelle
+            document.documentElement.lang = (lang === 'tr') ? 'tr' : 'en';
+
+            // buton active durumunu güncelle
+            document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-tr').setAttribute('aria-pressed', String(lang === 'tr'));
+            document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+        }
+
+        // başlangıç: tarayıcı diline göre TR/EN seç
+        const browserLang = navigator.language && navigator.language.startsWith('en') ? 'en' : 'tr';
+        const saved = localStorage.getItem('petello_lang') || browserLang;
+        applyTranslations(saved);
+
+        // buton olayları
+        document.getElementById('btn-tr').addEventListener('click', () => {
+            applyTranslations('tr');
+            localStorage.setItem('petello_lang', 'tr');
+        });
+        document.getElementById('btn-en').addEventListener('click', () => {
+            applyTranslations('en');
+            localStorage.setItem('petello_lang', 'en');
+        });
+
+        // form gönderimini demo için engelle (isteğe bağlı)
+        document.querySelector('.element-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert((localStorage.getItem('petello_lang') === 'en') ? 'Message sent (demo)' : 'Mesaj gönderildi (demo)');
+        });
+    </script>
 </body>
 
 </html>
